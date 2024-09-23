@@ -3,8 +3,8 @@
     <fullName>ClosingReason__c</fullName>
     <description>Why didn&apos;t we win?
 Replacement for Loss_Reason__c field SF-14624
-https://tracker.veeam.com/browse/SF-21712</description>
-    <inlineHelpText>Specify the loss reason if the deal is Closed Lost/Operational</inlineHelpText>
+https://tracker.veeam.com/browse/SF-21712,SF-23675</description>
+    <inlineHelpText>Specify the loss reason if the deal is Closed Lost/Other</inlineHelpText>
     <label>Closing Reason</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
@@ -33,26 +33,6 @@ https://tracker.veeam.com/browse/SF-21712</description>
                 <fullName>Duplicate</fullName>
                 <default>false</default>
                 <label>Duplicate</label>
-            </value>
-            <value>
-                <fullName>Freeware</fullName>
-                <default>false</default>
-                <label>Freeware</label>
-            </value>
-            <value>
-                <fullName>Infrastructure changes (Not using product or no longer needed)</fullName>
-                <default>false</default>
-                <label>Infrastructure changes (Not using product or no longer needed)</label>
-            </value>
-            <value>
-                <fullName>M&amp;A or HQ mandated competitor</fullName>
-                <default>false</default>
-                <label>M&amp;A or HQ mandated competitor</label>
-            </value>
-            <value>
-                <fullName>Marketplace route</fullName>
-                <default>false</default>
-                <label>Marketplace route</label>
             </value>
             <value>
                 <fullName>Moved to VCSP</fullName>
@@ -104,15 +84,15 @@ https://tracker.veeam.com/browse/SF-21712</description>
                 <default>false</default>
                 <label>Sanctions</label>
             </value>
+			<value>
+                <fullName>Support and Upgrades not needed</fullName>
+                <default>false</default>
+                <label>Support and upgrades not needed</label>
+            </value>
             <value>
                 <fullName>Software delivery method (appliance, BaaS, non-Veeam MSP)</fullName>
                 <default>false</default>
                 <label>Software delivery method (appliance, BaaS, non-Veeam MSP)</label>
-            </value>
-            <value>
-                <fullName>Support and Upgrades not needed</fullName>
-                <default>false</default>
-                <label>Support and upgrades not needed</label>
             </value>
             <value>
                 <fullName>Support issues</fullName>
@@ -120,14 +100,19 @@ https://tracker.veeam.com/browse/SF-21712</description>
                 <label>Support issues</label>
             </value>
             <value>
-                <fullName>Technical features</fullName>
+                <fullName>Technical limitations</fullName>
                 <default>false</default>
-                <label>Technical features</label>
+                <label>Technical limitations</label>
             </value>
             <value>
                 <fullName>SDR Rejected</fullName>
                 <default>false</default>
                 <label>SDR Rejected</label>
+            </value>
+			<value>
+                <fullName>No Renewal, no details provided​</fullName>
+                <default>false</default>
+                <label>No Renewal, no details provided​</label>
             </value>
             <value>
                 <fullName>OppShare Closed-Lost</fullName>

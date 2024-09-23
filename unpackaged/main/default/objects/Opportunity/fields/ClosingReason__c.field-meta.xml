@@ -3,8 +3,8 @@
     <fullName>ClosingReason__c</fullName>
     <description>Why didn&apos;t we win?
 Replacement for Loss_Reason__c field SF-14624
-https://tracker.veeam.com/browse/SF-21712</description>
-    <inlineHelpText>Specify the loss reason if the deal is Closed Lost/Operational</inlineHelpText>
+https://tracker.veeam.com/browse/SF-21712,SF-12346</description>
+    <inlineHelpText>Specify the loss reason if the deal is Closed Other/Operational</inlineHelpText>
     <label>Closing Reason</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
@@ -35,9 +35,9 @@ https://tracker.veeam.com/browse/SF-21712</description>
                 <label>Duplicate</label>
             </value>
             <value>
-                <fullName>Freeware</fullName>
+                <fullName>Shareware</fullName>
                 <default>false</default>
-                <label>Freeware</label>
+                <label>Shareware</label>
             </value>
             <value>
                 <fullName>Infrastructure changes (Not using product or no longer needed)</fullName>
@@ -118,11 +118,6 @@ https://tracker.veeam.com/browse/SF-21712</description>
                 <fullName>Support issues</fullName>
                 <default>false</default>
                 <label>Support issues</label>
-            </value>
-            <value>
-                <fullName>Technical features</fullName>
-                <default>false</default>
-                <label>Technical features</label>
             </value>
             <value>
                 <fullName>SDR Rejected</fullName>

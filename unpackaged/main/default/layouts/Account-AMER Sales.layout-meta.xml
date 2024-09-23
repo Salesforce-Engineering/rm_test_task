@@ -280,9 +280,21 @@
                 <behavior>Edit</behavior>
                 <field>ELA_End_Date__c</field>
             </layoutItems>
+			<layoutItems>
+                <behavior>Edit</behavior>
+                <field>WhitespaceFocus__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>STMAccountPeriod__c</field>
+            </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>BusinessDevelopmentRepresentative__c</field>
+            </layoutItems>
+			<layoutItems>
+                <behavior>Edit</behavior>
+                <field>VeeamAccountIDPrev__c</field>
             </layoutItems>
             <layoutItems>
                 <page>AccountIsUnderSanctionsAlert</page>
@@ -436,6 +448,18 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Number_of_Servers__c</field>
+            </layoutItems>
+			<layoutItems>
+                <behavior>Edit</behavior>
+                <field>celigo_sfnsio__NetSuite_Sync_Error__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>celigo_sfnsio__NetSuite_Id__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>PushtoNetsuite__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>

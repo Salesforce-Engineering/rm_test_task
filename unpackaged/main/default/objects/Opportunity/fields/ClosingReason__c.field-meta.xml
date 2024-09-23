@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ClosingReason__c</fullName>
+    <description>Why didn&apos;t we win?
+Replacement for Loss_Reason__c field SF-14624
+https://tracker.veeam.com/browse/SF-21712</description>
+    <inlineHelpText>Specify the loss reason if the deal is Closed Lost/Operational</inlineHelpText>
+    <label>Closing Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>StageName</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Closed Consolidated</fullName>
+                <default>false</default>
+                <label>Closed Consolidated</label>
+            </value>
+            <value>
+                <fullName>Customer non-responsive</fullName>
+                <default>false</default>
+                <label>Customer non-responsive</label>
+            </value>
+            <value>
+                <fullName>Customer out of business</fullName>
+                <default>false</default>
+                <label>Customer out of business</label>
+            </value>
+            <value>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+                <label>Duplicate</label>
+            </value>
+            <value>
+                <fullName>Freeware</fullName>
+                <default>false</default>
+                <label>Freeware</label>
+            </value>
+            <value>
+                <fullName>Infrastructure changes (Not using product or no longer needed)</fullName>
+                <default>false</default>
+                <label>Infrastructure changes (Not using product or no longer needed)</label>
+            </value>
+            <value>
+                <fullName>M&amp;A or HQ mandated competitor</fullName>
+                <default>false</default>
+                <label>M&amp;A or HQ mandated competitor</label>
+            </value>
+            <value>
+                <fullName>Marketplace route</fullName>
+                <default>false</default>
+                <label>Marketplace route</label>
+            </value>
+            <value>
+                <fullName>Moved to VCSP</fullName>
+                <default>false</default>
+                <label>Moved to VCSP</label>
+            </value>
+            <value>
+                <fullName>No budget</fullName>
+                <default>false</default>
+                <label>No budget</label>
+            </value>
+            <value>
+                <fullName>Order cancelled</fullName>
+                <default>false</default>
+                <label>Order cancelled</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Partial renewal</fullName>
+                <default>false</default>
+                <label>Partial renewal</label>
+            </value>
+            <value>
+                <fullName>Partner pushed competitor</fullName>
+                <default>false</default>
+                <label>Partner pushed competitor</label>
+            </value>
+            <value>
+                <fullName>Price</fullName>
+                <default>false</default>
+                <label>Price</label>
+            </value>
+            <value>
+                <fullName>Product never installed</fullName>
+                <default>false</default>
+                <label>Product never installed</label>
+            </value>
+            <value>
+                <fullName>Replaced by new licenses</fullName>
+                <default>false</default>
+                <label>Replaced by new licenses</label>
+            </value>
+            <value>
+                <fullName>Sanctions</fullName>
+                <default>false</default>
+                <label>Sanctions</label>
+            </value>
+            <value>
+                <fullName>Software delivery method (appliance, BaaS, non-Veeam MSP)</fullName>
+                <default>false</default>
+                <label>Software delivery method (appliance, BaaS, non-Veeam MSP)</label>
+            </value>
+            <value>
+                <fullName>Support and Upgrades not needed</fullName>
+                <default>false</default>
+                <label>Support and upgrades not needed</label>
+            </value>
+            <value>
+                <fullName>Support issues</fullName>
+                <default>false</default>
+                <label>Support issues</label>
+            </value>
+            <value>
+                <fullName>Technical features</fullName>
+                <default>false</default>
+                <label>Technical features</label>
+            </value>
+            <value>
+                <fullName>SDR Rejected</fullName>
+                <default>false</default>
+                <label>SDR Rejected</label>
+            </value>
+            <value>
+                <fullName>OppShare Closed-Lost</fullName>
+                <default>false</default>
+                <label>OppShare Closed-Lost</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Closed Operational</controllingFieldValue>
+            <valueName>Closed Consolidated</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Operational</controllingFieldValue>
+            <valueName>Duplicate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Operational</controllingFieldValue>
+            <valueName>Order cancelled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed VCSP</controllingFieldValue>
+            <valueName>Moved to VCSP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Qualifying Lost</controllingFieldValue>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Customer non-responsive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Qualifying Lost</controllingFieldValue>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Customer out of business</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Qualifying Lost</controllingFieldValue>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Freeware</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Qualifying Lost</controllingFieldValue>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Infrastructure changes (Not using product or no longer needed)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Qualifying Lost</controllingFieldValue>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>M&amp;A or HQ mandated competitor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Qualifying Lost</controllingFieldValue>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Marketplace route</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Qualifying Lost</controllingFieldValue>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>No budget</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Qualifying Lost</controllingFieldValue>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Qualifying Lost</controllingFieldValue>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Partial renewal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Qualifying Lost</controllingFieldValue>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Partner pushed competitor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Qualifying Lost</controllingFieldValue>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Price</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Qualifying Lost</controllingFieldValue>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Product never installed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Qualifying Lost</controllingFieldValue>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Replaced by new licenses</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Qualifying Lost</controllingFieldValue>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Sanctions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Qualifying Lost</controllingFieldValue>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Software delivery method (appliance, BaaS, non-Veeam MSP)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Qualifying Lost</controllingFieldValue>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Support and Upgrades not needed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Qualifying Lost</controllingFieldValue>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Support issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Qualifying Lost</controllingFieldValue>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Technical features</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>SDR Rejected</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>OppShare Closed-Lost</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

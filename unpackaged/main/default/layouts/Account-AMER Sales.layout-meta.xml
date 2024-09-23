@@ -284,6 +284,10 @@
                 <behavior>Edit</behavior>
                 <field>BusinessDevelopmentRepresentative__c</field>
             </layoutItems>
+			<layoutItems>
+                <behavior>Edit</behavior>
+                <field>IncumbentBackupVirtualCompetitor__c</field>
+            </layoutItems>
             <layoutItems>
                 <page>AccountIsUnderSanctionsAlert</page>
                 <showLabel>false</showLabel>
@@ -399,6 +403,61 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>AccountList__c</field>
+            </layoutItems>
+			<layoutItems>
+                <behavior>Edit</behavior>
+                <field>celigo_sfnsio__NetSuite_Sync_Error__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>celigo_sfnsio__NetSuite_Id__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>PushtoNetsuite__c</field>
+            </layoutItems>
+        </layoutColumns>
+        <style>TwoColumnsLeftToRight</style>
+    </layoutSections>
+	<layoutSections>
+        <customLabel>true</customLabel>
+        <detailHeading>true</detailHeading>
+        <editHeading>true</editHeading>
+        <label>D&amp;B Connect</label>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>dnb_exclude_company__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>DNBConnect__D_B_Connect_Company_Profile__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>DNBConnect__D_B_Match_Confidence_Code__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>DNBConnect__D_B_Match_Type__c</field>
+            </layoutItems>
+        </layoutColumns>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>DNBConnectDUNSNumber__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>DNBConnect__D_B_Match_Data_Profile__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>DNBConnect__D_B_Match_Grade__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>DNBConnect__D_B_Name_Match_Score__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>

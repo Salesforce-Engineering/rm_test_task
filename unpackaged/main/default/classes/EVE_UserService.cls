@@ -38,9 +38,9 @@ public with sharing class EVE_UserService implements EVE_IService{
 				currentProfile = new Profile(Name = SYS_ADMIN_PROFILE);
 			} else {
 				currentProfile = [
-						SELECT Id, Name
-						FROM Profile
-						WHERE Id = :UserInfo.getProfileId()
+					SELECT Id, Name
+					FROM Profile
+					WHERE Id = :UserInfo.getProfileId()
 				];
 			}
 		}
@@ -50,10 +50,7 @@ public with sharing class EVE_UserService implements EVE_IService{
 
 	public static Map<Id, Profile> getProfiles(String[] profilesNames) {
 		if (userProfiles == null) {
-			userProfiles = new Map<String, Profile>();
-			for (Profile prof : [SELECT Id, Name FROM Profile]) {
-				userProfiles.put(prof.Name, prof);
-			}
+			userProfiles = new Map<String, Profile>([SELECT Id, Name FROM Profile where Name in :profilesNames]);
 		}
 
 		Map<Id, Profile> profilesToReturn = new Map<Id, Profile>();

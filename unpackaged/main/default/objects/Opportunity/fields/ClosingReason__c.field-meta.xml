@@ -104,15 +104,15 @@ https://tracker.veeam.com/browse/SF-21712,SF-12346</description>
                 <default>false</default>
                 <label>Sanctions</label>
             </value>
+			<value>
+                <fullName>Support and Upgrades not needed</fullName>
+                <default>false</default>
+                <label>Support and upgrades not needed</label>
+            </value>
             <value>
                 <fullName>Software delivery method (appliance, BaaS, non-Veeam MSP)</fullName>
                 <default>false</default>
                 <label>Software delivery method (appliance, BaaS, non-Veeam MSP)</label>
-            </value>
-            <value>
-                <fullName>Support and Upgrades not needed</fullName>
-                <default>false</default>
-                <label>Support and upgrades not needed</label>
             </value>
             <value>
                 <fullName>Support issues</fullName>
@@ -123,6 +123,11 @@ https://tracker.veeam.com/browse/SF-21712,SF-12346</description>
                 <fullName>SDR Rejected</fullName>
                 <default>false</default>
                 <label>SDR Rejected</label>
+            </value>
+			<value>
+                <fullName>No Renewal, no details provided​</fullName>
+                <default>false</default>
+                <label>No Renewal, no details provided​</label>
             </value>
             <value>
                 <fullName>OppShare Closed-Lost</fullName>
